@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 import {
   MessageCircleDashed as MessageCircle,
   Shield,
@@ -14,27 +15,24 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onStartChat }) => {
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20 pb-10">
-      <div className="container mx-auto px-4 text-center">
+    <div className="min-h-screen flex flex-col justify-between pt-20 pb-0">
+      <div className="container mx-auto px-4 text-center flex-1 flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Chat with Your{" "}
-            <span className="bg-gradient-to-r from-warning/90 to-orange-warning bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary/80 to-warning bg-clip-text text-transparent">
               Inflation Shield
             </span>
           </h1>
-
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
             Get real-time price predictions and resilient strategies. Securely
             share insights on Sui blockchain.
           </p>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -48,7 +46,6 @@ const Hero: React.FC<HeroProps> = ({ onStartChat }) => {
                 AI-powered forecasts for Nigerian markets
               </p>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,7 +60,6 @@ const Hero: React.FC<HeroProps> = ({ onStartChat }) => {
                 Protect your purchasing power
               </p>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -77,17 +73,14 @@ const Hero: React.FC<HeroProps> = ({ onStartChat }) => {
               </p>
             </motion.div>
           </div>
-
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onStartChat}
             className="bg-gradient-to-r from-primary to-primary/20 hover:from-primary hover:to-primary/80 text-white px-12 py-4 rounded-2xl font-bold text-lg shadow-2xl transition-all duration-300 border border-white/20"
-
           >
             Start Chatting
           </motion.button>
-
           <div className="mt-12 flex items-center justify-center space-x-8 text-white/60">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-success rounded-full"></div>
@@ -104,6 +97,7 @@ const Hero: React.FC<HeroProps> = ({ onStartChat }) => {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };
