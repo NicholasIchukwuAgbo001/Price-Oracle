@@ -11,11 +11,11 @@ const menuItems = [
 export default function SidebarPage() {
   return (
     <div className="flex min-h-screen">
-      <aside className="w-64 bg-gray-900 text-white border-r border-gray-800 p-6 flex flex-col justify-between shadow-lg">
+      <aside className="w-64 bg-text-muted text-white border-r border-text-muted/90 p-6 flex flex-col justify-between shadow-lg">
 
         <div>
           <div className="mb-10">
-            <h2 className="pl-4 text-2xl font-bold">User Name</h2>
+            <h2 className="pl-4 text-2xl font-bold"> Welcome, User Name</h2>
           </div>
 
           <nav className="space-y-6">
@@ -23,7 +23,7 @@ export default function SidebarPage() {
               <Link
                 key={href}
                 href={href}
-                className="flex items-center gap-3 px-4 py-2 rounded-md text-white hover:bg-gray-800 hover:text-white transition-all"
+                className="flex items-center gap-3 px-4 py-2 rounded-md text-white hover:bg-text-muted hover:text-white transition-all"
               >
                 <span className="text-xl">{icon}</span>
                 <span className="text-lg font-medium">{label}</span>
