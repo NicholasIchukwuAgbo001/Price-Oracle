@@ -4,8 +4,7 @@
   --background: #020617;
   --lightgrey: #E5E7EB;
   --primary: #3B82F6;
-  --secondary: #710146;
-  --secondary-100: #5d073b;
+  --secondary: #222;
   --text-white: #FAFAFA;
   --text-muted: #66758A;
   --success: #16A34A;
@@ -19,7 +18,6 @@
   --color-lightgrey: var(--lightgrey);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-secondary-100: var(--secondary-100);
   --color-text-dark: var(--text-dark);
   --color-text-muted: var(--text-muted);
   --color-success: var(--success);

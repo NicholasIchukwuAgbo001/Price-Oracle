@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import FooterBrand from "@/components/FooterBrand";
-import FooterLinks from "@/components/FooterLinks";
-import FooterSocials from "@/components/FooterSocials";
+import FooterBrand from "@/components/footer/FooterBrand";
+import FooterLinks from "@/components/footer/FooterLinks";
+import FooterSocials from "@/components/footer/FooterSocials";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-20 bg-gradient-to-r from-background to-transparent text-white overflow-hidden border-t border-primary">
+    <footer className="relative ">
       <div className="absolute inset-0 opacity-20">
         <svg className="w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <motion.path
