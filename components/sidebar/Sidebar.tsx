@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaTachometerAlt, FaRobot, FaCog, FaUser } from 'react-icons/fa';
 
@@ -9,13 +12,21 @@ const menuItems = [
 ];
 
 export default function SidebarPage() {
+  const [userName, setUserName] = useState('User');
+
+  useEffect(() => {
+    const storedName = localStorage.getItem('userName');
+    if (storedName) {
+      setUserName(storedName);
+    }
+  }, []);
+
   return (
     <div className="flex min-h-screen">
       <aside className="w-64 bg-text-muted text-white border-r border-text-muted/90 p-6 flex flex-col justify-between shadow-lg">
-
         <div>
           <div className="mb-10">
-            <h2 className="pl-4 text-2xl font-bold"> Welcome, User Name</h2>
+            <h2 className="pl-4 text-2xl font-bold">Welcome, {userName}</h2>
           </div>
 
           <nav className="space-y-6">
@@ -38,7 +49,6 @@ export default function SidebarPage() {
           Logout
         </button>
       </aside>
-
     </div>
   );
 }
