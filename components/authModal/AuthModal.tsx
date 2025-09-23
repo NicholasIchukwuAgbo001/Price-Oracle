@@ -45,7 +45,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }) => {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 20 }}
           onClick={e => e.stopPropagation()}
-          className="relative bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden"
+          className="relative bg-white rounded-2xl w-full max-w-md overflow-hidden"
         >
           <AuthHeader isLogin={isLogin} onClose={onClose} />
 

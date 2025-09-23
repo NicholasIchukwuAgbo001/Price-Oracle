@@ -6,9 +6,9 @@ export default function FooterLinks() {
     <div className="text-center">
       <h4 className="font-semibold mb-4">Quick Links</h4>
       <div className="space-y-2">
-        {["Privacy Policy", "Feedback", "Terms of Service"].map((item, i) => (
+        {["Privacy Policy", "Feedback", "Terms of Service"].map((item, index) => (
           <motion.a
-            key={i}
+            key={index}
             href="#"
             className="block text-white hover:text-white text-sm transition-colors"
             whileHover={{ scale: 1.05 }}
