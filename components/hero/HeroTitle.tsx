@@ -8,7 +8,7 @@ export default function HeroTitle() {
         </span>
       </h1>
       <p className="text-xl md:text-lg text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-        Get real-time price predictions and resilient strategies. Securely
+        Get real time price predictions and resilient strategies. Securely
         share insights on Sui blockchain.
       </p>
     </>

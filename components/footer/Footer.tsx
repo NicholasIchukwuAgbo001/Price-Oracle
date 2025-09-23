@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className="border-t border-primary mt-8 pt-6 text-center">
           <p className="text-white/70 text-xs">
-            Secure • Transparent • AI-Powered • Built on Sui Blockchain
+            Secure • Transparent • AI Powered • Built on Sui Blockchain
           </p>
         </div>
       </div>

@@ -8,9 +8,8 @@ export default function FooterBrand() {
         <span className="text-lg font-bold">Inflation Advisor</span>
       </div>
       <p className="text-white text-sm">
-        Powered by Sui & AI – Secure Strategies for Nigerian Markets
+        Powered by Sui & AI Secure Strategies for Nigerian Markets
       </p>
-      <p className="text-white text-xs mt-2">© 2025</p>
     </div>
   );
 }

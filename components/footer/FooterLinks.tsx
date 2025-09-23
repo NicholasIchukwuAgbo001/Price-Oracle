@@ -9,7 +9,7 @@ export default function FooterLinks() {
         {["Privacy Policy", "Feedback", "Terms of Service"].map((item, i) => (
           <motion.a
             key={i}
-            href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+            href="#"
             className="block text-white hover:text-white text-sm transition-colors"
             whileHover={{ scale: 1.05 }}
           >
